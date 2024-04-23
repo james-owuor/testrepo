@@ -155,8 +155,4 @@
 #     coordinates= [[c.y,c.x],[b.y, b.x]]
 #     map_osm.add_child(folium.PolyLine(coordinates, color="#FF0000", weight=5))
 # map_osm.show_in_browser()
-import requests
-import json
-response= requests.get('https://data.cityofchicago.org/api/views/x8fc-8rcq/rows.json?accessType=DOWNLOAD')
-print(response.json())
-print(response["data"])
+
